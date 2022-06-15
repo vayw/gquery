@@ -66,3 +66,13 @@ func Bracer(st string) (res string) {
 	res = fmt.Sprintf("%s %s", res, strings.Repeat(" } ", len(tf)-1))
 	return
 }
+
+func Equal(st string) (condition, value string) {
+	condition = "_eq"
+	value = gquery.Str(st)
+	return
+}
+
+func Str(st string) string {
+	return fmt.Sprintf("\"%s\"", st)
+}
