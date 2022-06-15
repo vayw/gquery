@@ -69,7 +69,7 @@ func Bracer(st string) (res string) {
 
 func Equal(st string) (condition, value string) {
 	condition = "_eq"
-	value = gquery.Str(st)
+	value = Str(st)
 	return
 }
 
